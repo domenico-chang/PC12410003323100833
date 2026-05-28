@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace PC12410003323100833.CORE.Models;
+namespace PC12410003323100833.CORE.Core.Entities;
 
 public partial class Vehiculo
 {

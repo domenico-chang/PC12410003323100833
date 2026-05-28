@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
+using PC12410003323100833.CORE.Core.Entities;
 
-namespace PC12410003323100833.CORE.Models;
+namespace PC12410003323100833.CORE.Infrastructure.Data;
 
 public partial class TallerMecanicoContext : DbContext
 {
