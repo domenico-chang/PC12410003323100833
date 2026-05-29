@@ -1,0 +1,13 @@
+﻿a. Durante el scaffolding tuve problemas con la conexión a SQL Server y errores de compilación
+porque el DbContext aún no existía. Lo solucioné corrigiendo la cadena de conexión y eliminando
+temporalmente archivos con errores antes de ejecutar el comando Scaffold-DbContext
+
+b. El controlador autogenerado es más rápido y simple, mientras que el uso de repository organiza 
+mejor la lógica y hace el proyecto más mantenible. Prefiero el enfoque con repository porque separa responsabilidades 
+y el código queda más limpio.
+
+c. Implementé inyección de dependencias, separación por capas (API, Core e Infrastructure) y uso de DTOs para evitar 
+exponer directamente las entidades. Esto mejora el orden, mantenimiento y escalabilidad del proyecto.
+
+d. Sí, utilicé ChatGPT como herramienta de IA. Lo usé para resolver errores de scaffolding, configurar Entity Framework Core, 
+estructurar el proyecto y validar pruebas en Postman.

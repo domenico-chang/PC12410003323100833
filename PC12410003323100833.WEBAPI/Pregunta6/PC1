@@ -1,0 +1,119 @@
+{
+  "info": {
+    "_postman_id": "8296c840-7c3d-4d1c-8621-ef84fae72f0f",
+    "name": "New Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54850648"
+  },
+  "item": [
+    {
+      "name": "GET",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5224/api/OrdenServicio",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5224",
+          "path": [
+            "api",
+            "OrdenServicio"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "POST",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n\"fechaIngreso\": \"2026-05-28\",\r\n\"descripcionProblema\": \"Cambio de llantas\",\r\n\"costoEstimado\": 200,\r\n\"estado\": \"Pendiente\",\r\n\"vehiculoId\": 1,\r\n\"tipoServicioId\": 1\r\n}\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5224/api/OrdenServicio",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5224",
+          "path": [
+            "api",
+            "OrdenServicio"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PUT",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "\r\n    {\r\n        \"id\": 2,\r\n        \"fechaIngreso\": \"2026-05-28\",\r\n        \"descripcionProblema\": \"Cambio de aceite\",\r\n        \"costoEstimado\": 120,\r\n        \"estado\": \"Completado\",\r\n        \"vehiculoId\": 1,\r\n        \"tipoServicioId\": 1\r\n    }\r\n",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5224/api/OrdenServicio",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5224",
+          "path": [
+            "api",
+            "OrdenServicio"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DELETE",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n\"fechaIngreso\": \"2026-05-28\",\r\n\"descripcionProblema\": \"Cambio de aceite\",\r\n\"costoEstimado\": 120,\r\n\"estado\": \"Pendiente\",\r\n\"vehiculoId\": 1,\r\n\"tipoServicioId\": 1\r\n}\r\n"
+        },
+        "url": {
+          "raw": "http://localhost:5224/api/OrdenServicio/:id",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5224",
+          "path": [
+            "api",
+            "OrdenServicio",
+            ":id"
+          ],
+          "variable": [
+            {
+              "key": "id",
+              "value": "3"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
