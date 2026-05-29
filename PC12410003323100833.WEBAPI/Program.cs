@@ -3,6 +3,8 @@ using PC12410003323100833.CORE.Core.Interfaces;
 using PC12410003323100833.CORE.Core.Services;
 using PC12410003323100833.CORE.Infrastructure.Data;
 using PC12410003323100833.CORE.Infrastructure.Repositories;
+using Microsoft.EntityFrameworkCore;
+using PC12410003323100833.CORE.Infrastructure.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,6 +16,12 @@ builder.Services.AddDbContext<TallerMecanicoContext>(options =>
 
 builder.Services.AddTransient<IOrdenServicioRepository, OrdenServicioRepository>();
 builder.Services.AddTransient<IOrdenServicioService, OrdenServicioService>();
+
+builder.Services.AddDbContext<TallerMecanicoContext>(options =>
+{
+    options.UseSqlServer(
+        builder.Configuration.GetConnectionString("cadenaSQL"));
+});
 
 builder.Services.AddControllers();
 builder.Services.AddOpenApi();
